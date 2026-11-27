@@ -1,0 +1,36 @@
+{
+  "name": "krainz-art-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "dev:vinext": "vinext dev",
+    "build": "vinext build && node scripts/package-sites.mjs",
+    "build:next": "next build",
+    "start": "vinext start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "check:pages": "node scripts/check-pages.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "@vitejs/plugin-rsc": "^0.5.27",
+    "next": "16.2.10",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-server-dom-webpack": "^19.2.6",
+    "vinext": "^1.0.0-beta.1",
+    "vite": "^8.1.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
